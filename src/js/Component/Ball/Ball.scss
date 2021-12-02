@@ -1,0 +1,21 @@
+.lottery__ball {
+  background-color: tomato;
+  //   padding: 1rem 1.3rem;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  display: inline-block;
+  color: white;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 2;
+
+  // &:not(:last-child) {
+  //   margin-right: 1rem;
+  // }
+
+  &--active {
+    background-color: blue;
+  }
+}

@@ -1,0 +1,43 @@
+.lottery {
+  //   background-color: black;
+  width: 70%;
+  margin: 3rem auto;
+
+  padding: 0 2rem;
+
+  border: 2px solid rgb(97, 107, 98);
+  border-radius: 0.3rem;
+  text-align: center;
+  &__title {
+    margin: 1rem;
+    font-size: large;
+    font-weight: 900;
+  }
+
+  &__ball-container {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 1rem;
+
+    justify-content: center;
+  }
+
+  &__btn {
+    margin: 1rem 0;
+    margin-top: 0;
+    background-color: rgb(173, 36, 36);
+    border: none;
+    color: white;
+    padding: 0.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+}
