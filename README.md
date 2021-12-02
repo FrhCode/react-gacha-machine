@@ -13,5 +13,5 @@ Gacha machine prototype
 - open file with name index.html 
 
 ## Galery
-![This is an image](./src/newPhoto.png.png)
+![This is an image](./src/newPhoto.png)
 
