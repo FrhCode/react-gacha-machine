@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import generateRandomNumber from "../../Helper/generateRandomNumber";
 import Ball from "../Ball/Ball";
-
 import "./Lottery.scss";
+import sound from "../../../static/kick-tech-5825.mp3";
+import finish from "../../../static/earcon-completed-finished-musical--(ver-22)-sound-effect-78948975.mp3";
 class Lottery extends Component {
   static defaultProps = {
     title: "weeekly Lottery",
@@ -44,6 +45,8 @@ class Lottery extends Component {
     }, 10);
 
     const intervalAddCounter = setInterval(() => {
+      var audio = new Audio(sound);
+      audio.play();
       this.setState((state) => {
         return {
           counter: ++state.counter,
@@ -51,6 +54,8 @@ class Lottery extends Component {
       });
     }, this.state.timeOut / this.props.ballCount);
     setTimeout(() => {
+      var audio = new Audio(finish);
+      audio.play();
       clearInterval(intervalChangeNumber);
       clearInterval(intervalAddCounter);
       this.setState((state) => {

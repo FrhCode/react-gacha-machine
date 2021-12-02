@@ -38,6 +38,13 @@ module.exports = {
           filename: "./img/[name][ext]",
         },
       },
+      {
+        test: /\.mp3$/,
+        type: "asset/resource",
+        generator: {
+          filename: "./sound/[name][ext]",
+        },
+      },
 
       {
         test: /\.scss$/i,
